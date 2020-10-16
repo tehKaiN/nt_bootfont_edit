@@ -1,6 +1,6 @@
 # Windows NT bootfont.bin Editor
 
-This is a small app which I've written around 2010, which allows you to edit font used for hibernation resume, F8 boot menu etc. in Windows 2000 as well as Windows XP, perhaps earlier versions too.
+This is a small app which I've written around 2010, which allows you to edit font used for hibernation resume, F8 boot menu, as well as first text-based install stage in Windows 2000 as well as Windows XP, perhaps in earlier versions too.
 
 I've started this project with realization that somehow those early text mode screens use localized fonts instead of default codepage.
 I've looked around the system and found the bootfont.bin file on the main directory of my system partition, started hacking around it in hex editor, and some days later the editor was complete.
