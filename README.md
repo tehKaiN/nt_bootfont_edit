@@ -7,8 +7,8 @@ I've looked around the system and found the bootfont.bin file on the main direct
 
 ## Features
 
-- Save/load bootfont.bin files
-- Supports wide character format for Asia-translated versions of Windows
+- Save/load bootfont.bin files.
+- Supports wide character format for Asia-translated versions of Windows.
 
 ## Modified bootfonts
 
@@ -29,6 +29,12 @@ The most reverse-engineering work was done by doing a mix of:
 - looking at bytes in hex editor until they're scared enough and start to talk,
 - changing some bytes in file and analyzing result,
 - comparing between different versions of files (different languages of Windows).
+
+Some points of reference which I've used across developing:
+
+- [Windows locale codes](https://www.science.co.il/language/Locale-codes.php?s=hexadecimal)
+- [GBK Code tables](http://www.khngai.com/chinese/charmap/tblgbk.php?page=2)
+- According to my bookmarks there was some bootfont documentation on [chiplink.spaces.live.com](http://chiplink.spaces.live.com/blog/cns!D22964D1AB87651!176.entry) but unfortunately no copy of such page exists anymore.
 
 ## Code status & future
 
