@@ -22,7 +22,7 @@ Just replace them as bootfont.bin and it should work!
 
 ## File format
 
-Funny that after all those years, there are no similar apps and the documentation is even more scarce right now. Unfortunately, i haven't written any file format reference, but since app is mostly complete, it can serve as a basis for writing such document.
+Funny that after all those years, there are no similar apps and the documentation is even more scarce right now. Unfortunately, the only thing which I've written and resembles some form of documentation is [bootfonthdr.c](doc/bootfonthdr.c) file, but more should be decipherable from the app itself.
 
 The most reverse-engineering work was done by doing a mix of:
 
