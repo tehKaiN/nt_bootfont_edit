@@ -1,0 +1,43 @@
+#include <windows.h>
+#include "res_id.h"
+
+888 ICON LOADONCALL DISCARDABLE "bootfont_edit.ico"
+
+resAcc ACCELERATORS {
+	VK_OEM_3, accInfo, CONTROL, VIRTKEY
+	"^1", acc816
+	"^2", acc1616
+	"^O", accOpen
+	"^S", accSaveAs, SHIFT
+	"^S", accSave
+	"^P", accPath
+}
+
+1300 MENU {
+	POPUP "&File" {
+		MENUITEM "&Open...\tCtrl+O", menuOpen
+		MENUITEM "Save &as...\tCtrl+Shift+S", menuSaveAs, GRAYED
+		MENUITEM "&Save\tCtrl+S",menuSave, GRAYED
+		MENUITEM SEPARATOR
+		MENUITEM "File &info\tCtrl+~", menuInfo, GRAYED
+		MENUITEM "8x16 Edit\tCtrl+1", menu816
+		MENUITEM "16x16 Edit\tCtrl+2", menu1616
+		MENUITEM "Show full path in title bar\tCtrl+P", menuPath
+		MENUITEM SEPARATOR
+		MENUITEM "&Quit \tAlt+F4", menuQuit
+	}
+
+	POPUP "&Align" {
+		MENUITEM "&Left\tShift+Left", menuLeft, GRAYED
+		MENUITEM "&Center", menuCenter, GRAYED
+		MENUITEM "&Right\tShift+Right", menuRight, GRAYED
+		MENUITEM SEPARATOR
+		MENUITEM "&Top\tShift+Up", menuUp, GRAYED
+		MENUITEM "&Middle", menuMid, GRAYED
+		MENUITEM "&Bottom\tShift+Down", menuDn, GRAYED
+		MENUITEM SEPARATOR
+		MENUITEM "&Align all\tCtrl+A", menuAll, GRAYED
+	}
+
+	MENUITEM "About", menuAbout
+}
